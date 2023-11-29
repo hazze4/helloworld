@@ -1,107 +1,29 @@
+<html>
+   <body> 
+         <Script type = "text/javascript">
+         <!--
+           
+            var food = "beets";
+            
+           switch (food) {
+           case 'orange':
+           case 'banana':
+           document.write("This is a fruit<br />");
+           break;
 
-<html lang="en">
-
-<head>
-
-
-
-    <title>Car Order</title>
-
-    <style>
-
-        img {
-
-            max-width: 100%;
-
-            height: auto;
-
-        }
-
-    </style>
-
-</head>
-
-<body>
-
+           case 'carrot':
+           case 'cucumber':
+           document.write("This is a vegetable<br />");
+           break;
+           
+            case 'beets':
+             document.write("Yuck!!<br />");
+             document.write("Also a vegetable<br />");
+             break;
+             default: document.write("Unknow<br />");
+             }
  
-
-    <form>
-
-        <label>
-
-            <input type="radio" name="color" value="red"> Red
-
-        </label>
-
-        <label>
-
-            <input type="radio" name="color" value="green"> Green
-
-        </label>
-
-        <label>
-
-            <input type="radio" name="color" value="blue"> Blue
-
-        </label>
-
- 
-
-        <br>
-
- 
-
-        <label>
-
-            <input type="radio" name="make" value="Lexus"> Lexus
-
-        </label>
-
-        <label>
-
-            <input type="radio" name="make" value="Benz"> Benz
-
-        </label>
-
- 
-
-        <br>
-
- 
-
-        <button type="button" onclick="displayOrder()">Place Order</button>
-
-    </form>
-
- 
-
-    <div id="orderResult"></div>
-
- 
-
-    <script>
-
-        function displayOrder() {
-
-            var color = document.querySelector('input[name="color"]:checked').value;
-
-            var make = document.querySelector('input[name="make"]:checked').value;
-
- 
-
-            var imageUrl = `images/Lexus_red.jpg, images/Lexus_blue.jpg, images/Lexus_green.jpg, images/Benz_red.jpg, images/Benz_green.jpg, images/Benz_blue.jpg`; 
- 
-
-            var orderResult = document.getElementById('orderResult');
-
-            orderResult.innerHTML = `<p>This is your order:</p><img src="${imageUrl}" alt="${make} ${color} car">`;
-
-        }
-
-    </script>
-
- 
-
-</body>
-
+         //-->
+      </script>      
+   </body>
 </html>
